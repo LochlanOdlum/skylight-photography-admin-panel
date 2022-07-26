@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-function App() {
+import LoginPage from './pages/Login/LoginPage';
+import DashboardPage from './pages/Dashboard/DashboardPage';
+import OrdersPage from './pages/Orders/OrdersPage';
+import UsersPage from './pages/Users/UsersPage';
+import CollectionsPage from './pages/Collections/CollectionsPage';
+import PhotosPage from './pages/Photos/PhotosPage';
+
+import './assets/styles/global.scss';
+
+const ProtectedLoginRoute = () => {
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+
+  return isLoggedIn ? <Outlet /> : <LoginPage />;
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<ProtectedLoginRoute />}>
+          <Route path='/' element={<DashboardPage />} />
+          <Route path='/orders' element={<OrdersPage />} />
+          <Route path='/users' element={<UsersPage />} />
+          <Route path='/collections' element={<CollectionsPage />} />
+          <Route path='/photos' element={<PhotosPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

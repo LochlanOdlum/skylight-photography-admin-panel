@@ -1,0 +1,47 @@
+@use '../../assets/styles/colors.scss';
+@use '../../assets/styles/common.scss';
+
+.lp-inner {
+  min-height: 100vh;
+  @include common.center_vert_horz;
+}
+
+.lp-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.lp-signIn-text {
+  font-weight: 700;
+}
+
+.lp-signIn-form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.lp-signIn-form-input,
+.lp-signIn-form-submit-button {
+  height: 40px;
+  width: 280px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.lp-signIn-form-submit-button {
+  background-color: colors.$signIn_button_color;
+  color: colors.$text_color_contrast;
+}
+
+.lip-forgotten-password-text {
+  margin-top: 4%;
+  color: colors.$text_color_faded;
+  font-size: 0.8rem;
+}
+
+.lip-forgotten-password-text:hover {
+  cursor: pointer;
+}

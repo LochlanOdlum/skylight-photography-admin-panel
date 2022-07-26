@@ -1,0 +1,30 @@
+.admin-widget {
+  background: #ffffff;
+  flex-grow: 1;
+  width: 220px;
+  max-height: 70px;
+}
+
+.admin-widget-content {
+  display: flex;
+}
+
+.admin-widget-content {
+  padding: 15px;
+}
+
+.admin-widget-content-right {
+  margin-left: auto;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.admin-widget-content-heading {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.admin-widget-content-subheading {
+  opacity: 0.5;
+}

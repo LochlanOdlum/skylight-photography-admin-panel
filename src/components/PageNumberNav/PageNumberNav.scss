@@ -1,0 +1,38 @@
+.ap-photos-page-buttons {
+  display: flex;
+  margin-left: auto;
+  column-gap: 3px;
+}
+
+.pageNumNav-pageNum {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.pageNumNav-pageNum:hover {
+  background: #dee2e6;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pageNumNav-pageNum.active {
+  background: #ccc;
+}
+
+.pagNav-previous-button,
+.pagNav-next-button {
+  color: gray;
+  background: none;
+  border: none;
+}
+
+.pagNav-previous-button:hover,
+.pagNav-next-button:hover {
+  color: black;
+  cursor: pointer;
+}

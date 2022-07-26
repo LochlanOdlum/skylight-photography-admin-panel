@@ -1,0 +1,136 @@
+.aodm {
+  width: 800px;
+  max-width: 990px;
+  height: 619px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aodm-header {
+  height: 80px;
+  background-color: #f4f4f4;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.aodm-order-num {
+  margin-left: 2rem;
+  font-size: 20px;
+}
+
+.aodm-header-close-cross {
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+
+.aodm-header-close-cross:hover {
+  cursor: pointer;
+}
+
+.aodm-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.aodm-content-main {
+  display: flex;
+  flex-grow: 1;
+  /* height: 100%; */
+}
+
+.aodm-seperator-bar {
+  /* margin-left: auto; */
+  /* margin-right: 5%; */
+  margin: 5% 5% 0 auto;
+  width: 3px;
+  background-color: #d9d9d9;
+  height: 74%;
+}
+
+.aodm-content-right {
+  /* margin-left: auto; */
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 25px; */
+  width: 35%;
+  height: 70%;
+  margin-top: 7%;
+}
+
+.aodm-orderItem {
+  display: flex;
+  margin-right: 20px;
+  padding-bottom: 12px;
+}
+
+.aodm-orderItem:not(:first-child) {
+  border-top: 2px solid #d9d9d9;
+  padding-top: 12px;
+}
+
+.aodm-orderItem-image {
+  width: 23%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.aodm-oi-info-1 {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.aodm-oi-title {
+  font-size: 18px;
+}
+
+.aodm-oi-price {
+  margin-top: auto;
+}
+
+.aodm-content-left {
+  flex-grow: 1;
+}
+
+.aodm-customer-info {
+  margin: 70px auto 0 auto;
+  width: 60%;
+}
+
+.aodm-customer-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.aodm-customer-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.aodm-customer-data-row {
+  display: flex;
+  font-size: 13px;
+}
+
+.aodm-customer-data-value {
+  margin-left: auto;
+}
+
+.aodm-content-lower {
+  margin-top: auto;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.aodm-order-total {
+  margin-left: auto;
+  font-size: 26px;
+  margin-right: 5%;
+}

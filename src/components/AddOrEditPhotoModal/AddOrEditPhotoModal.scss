@@ -1,0 +1,77 @@
+.image-upload-modal {
+  border-radius: 5px;
+  width: 35vw;
+  height: 600px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-upload-image-input-parent {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 250px;
+  background-color: #eaeaea;
+}
+
+.image-upload-image-input-label {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+#image-upload-image-input {
+  display: none;
+}
+
+.image-upload-input-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-row-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: 30% 60%;
+}
+
+.iu-input-grid-label {
+  padding-right: 16%;
+  font-size: 18px;
+  justify-self: right;
+}
+
+.iu-input-field {
+  height: 25px;
+  border: 1.2px solid #626262;
+  background-color: white;
+}
+
+.iu-input-field-collection {
+  background-color: #fff;
+  border: 1px solid #9d9da9;
+}
+
+.iu-input-field-price,
+.iu-input-field-collection {
+  width: 35%;
+}
+
+.iu-description-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.image-upload-submit-button {
+  background: #eaeaea;
+  border: 0 solid transparent;
+  border-top-color: transparent;
+  border-top-style: solid;
+  border-top-width: 0px;
+  border-top: 1px solid #cfcfcf;
+  margin-top: auto;
+  color: inherit;
+  font: inherit;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
