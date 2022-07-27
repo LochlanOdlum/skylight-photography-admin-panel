@@ -36,7 +36,7 @@ const RecentOrdersWidget = () => {
           <td className='card-table-cell text-center'>
             {/* <div className='admin-table-cell-name-wrapper '> */}
             {/* <img src='/images/user.png' alt='user-icon' className='admin-table-cell-user-icon'></img> */}
-            Lochlan Odlum
+            {order.customerName}
             {/* </div> */}
           </td>
           <td className='card-table-cell text-center'>
