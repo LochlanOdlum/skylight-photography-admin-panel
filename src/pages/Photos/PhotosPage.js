@@ -124,7 +124,7 @@ const PhotosPage = () => {
           />
         </ModalParent>
       )}
-      <div className='panel-page'>
+      <div className='panel-page t'>
         <div className='panel-page-inner'>
           <div className='card-table-container card'>
             <div className='card-table-header'>
