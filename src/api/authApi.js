@@ -9,7 +9,7 @@ export const apiLogin = async (email, password) => {
     body: JSON.stringify({ email, password }),
   };
 
-  const data = await makeRequest('/login', requestOptions);
+  const data = await makeRequest('/auth/login', requestOptions);
   const { token, isUserAdmin, UsersEmail, UsersName } = data;
 
   return { token, isUserAdmin, UsersEmail, UsersName };
